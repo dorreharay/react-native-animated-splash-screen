@@ -135,7 +135,7 @@ class AnimatedSplash extends React.Component {
                   {
                     height: logoHeight || 150,
                     width: logoWidth || 150,
-                    marginBottom: 100,
+                    marginBottom: 0,
                   },
                   logoScale,
                   logoOpacity
