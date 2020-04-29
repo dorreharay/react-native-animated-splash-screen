@@ -107,7 +107,11 @@ class AnimatedSplash extends React.Component {
 
     return (
       <View style={styles.flex}>
-        <StatusBar backgroundColor={backgroundColor || "red"} animated />
+        {animationDone ? (
+          < StatusBar backgroundColor={'#F6ECEB'} animated />
+        ) : (
+            <StatusBar backgroundColor={backgroundColor || "red"} animated />
+          )}
         {!animationDone && <View style={StyleSheet.absoluteFill} />}
         <View style={styles.flexCentered}>
           {!animationDone && (
